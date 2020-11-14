@@ -1,0 +1,15 @@
+[global]
+refill_buffers
+time_based=1
+size=5g
+directory=/mnt
+iodepth=16
+direct=1
+blocksize=256k
+group_reporting
+ioengine=sync
+runtime=300
+
+[workload]
+rw=write
+numjobs=1
